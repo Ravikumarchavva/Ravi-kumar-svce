@@ -5,7 +5,7 @@ connection <- dbConnect(
     drv=SQLite(),
     dbname="/workspaces/Ravi-kumar-svce/database/code.db"
 )
-dbListTables(connection)
+
 dbListTables(connection,'student')
 
 surveys<-tbl(connection,'student')
